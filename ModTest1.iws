@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b63aae89-1246-4b56-9797-a0a89507a10c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/configuration/ConfigurationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/proxy/ClientProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/proxy/CommonProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/proxy/IProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/proxy/ServerProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/reference/Reference.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ModTest1.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ModTest1.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModTest1_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ModTest1_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/splash.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/splash.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/ModTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/ModTest1.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -105,13 +107,13 @@
         <counts>
           <entry key="gradle" value="3" />
           <entry key="info" value="1" />
-          <entry key="java" value="1" />
+          <entry key="java" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="10" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -119,15 +121,15 @@
         <counts>
           <entry key="gradle" value="39" />
           <entry key="info" value="212" />
-          <entry key="java" value="343" />
-          <entry key="txt" value="18" />
+          <entry key="java" value="791" />
+          <entry key="txt" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="39" />
-          <entry key="JAVA" value="343" />
-          <entry key="PLAIN_TEXT" value="230" />
+          <entry key="JAVA" value="791" />
+          <entry key="PLAIN_TEXT" value="246" />
         </counts>
       </usages-collector>
     </session>
@@ -135,10 +137,31 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mcmod.info">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/ModTest1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="306">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/reference/Reference.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/configuration/ConfigurationHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -148,6 +171,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -737,8 +761,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/ModTest1.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mcmod.info" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/proxy/ClientProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/proxy/ServerProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/proxy/CommonProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/reference/Reference.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/ModTest1.java" />
       </list>
     </option>
   </component>
@@ -756,12 +784,14 @@
       <profile-state />
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="PackagesPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -771,17 +801,29 @@
           <expand>
             <path>
               <item name="ModTest1" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ModTest1" type="616d4139:PackageViewModuleNode" />
+              <item name="ModTest1_main" type="616d4139:PackageViewModuleNode" />
             </path>
             <path>
               <item name="ModTest1" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ModTest1" type="616d4139:PackageViewModuleNode" />
+              <item name="ModTest1_main" type="616d4139:PackageViewModuleNode" />
+              <item name="assets.modtest1" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="ModTest1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ModTest1_main" type="616d4139:PackageViewModuleNode" />
               <item name="com.lkrsfn.test1" type="1f31426a:PackageElementNode" />
             </path>
             <path>
               <item name="ModTest1" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ModTest1" type="616d4139:PackageViewModuleNode" />
-              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
+              <item name="ModTest1_main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lkrsfn.test1" type="1f31426a:PackageElementNode" />
+              <item name="configuration" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="ModTest1" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ModTest1_main" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lkrsfn.test1" type="1f31426a:PackageElementNode" />
+              <item name="reference" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -933,7 +975,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533929057131</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added mcmod.info">
+      <created>1533930297201</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1533930297201</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -943,7 +992,7 @@
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49902153" visible="true" weight="0.34210527" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49902153" weight="0.34210527" />
       <window_info id="Structure" order="1" sideWeight="0.50097847" side_tool="true" weight="0.3434903" />
       <window_info anchor="bottom" id="Version Control" weight="0.32972974" />
       <window_info anchor="bottom" id="Terminal" weight="0.32972974" />
@@ -952,7 +1001,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32972974" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30810812" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30810812" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -970,9 +1019,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <MESSAGE value="Added mod class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added mod class" />
+    <MESSAGE value="Added mcmod.info" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mcmod.info" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -983,20 +1032,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/ModTest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mcmod.info">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/proxy/ClientProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/proxy/ServerProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/proxy/CommonProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.4.2705/snapshot/20171003/forgeSrc-1.12.2-14.23.4.2705-sources.jar!/net/minecraftforge/fml/common/SidedProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/proxy/IProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/configuration/ConfigurationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/reference/Reference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lkrsfn/test1/ModTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
