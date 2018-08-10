@@ -1,0 +1,14 @@
+[
+{
+  "modid": "modtest1",
+  "name": "Test 1",
+  "description": "I'm how to make mod. I make the mod good.",
+  "credits": "Pahimar Let's Mod Reboot series, and everyone who makes open source mods",
+  "version": "1.0",
+  "mcversion": "1.12.2",
+  "authorList": [ "lkrsfn" ],
+  "logofile": "",
+  "dependencies": [
+  ]
+}
+]
