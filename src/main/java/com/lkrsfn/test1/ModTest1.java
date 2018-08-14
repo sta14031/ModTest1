@@ -1,5 +1,6 @@
 package com.lkrsfn.test1;
 
+import com.lkrsfn.test1.handler.ConfigurationHandler;
 import com.lkrsfn.test1.proxy.IProxy;
 import com.lkrsfn.test1.reference.Reference;
 import net.minecraftforge.fml.common.Mod;
@@ -7,6 +8,8 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+
+import java.sql.Ref;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class ModTest1 {
@@ -19,7 +22,7 @@ public class ModTest1 {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
     }
 
     @Mod.EventHandler
