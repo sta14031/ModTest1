@@ -3,6 +3,7 @@ package com.lkrsfn.test1;
 import com.lkrsfn.test1.handler.ConfigurationHandler;
 import com.lkrsfn.test1.proxy.IProxy;
 import com.lkrsfn.test1.reference.Reference;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -23,6 +24,7 @@ public class ModTest1 {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
     }
 
     @Mod.EventHandler

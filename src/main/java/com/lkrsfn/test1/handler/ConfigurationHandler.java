@@ -16,6 +16,7 @@ public class ConfigurationHandler {
         // Create the configuration object from the given configuration file
         if (configuration == null) {
             configuration = new Configuration(configFile);
+            loadConfiguration();
         }
     }
 
@@ -27,7 +28,7 @@ public class ConfigurationHandler {
         }
     }
 
-    public void loadConfiguration() {
+    private static void loadConfiguration() {
         numShards = configuration.getInt("numShards",
                 Configuration.CATEGORY_GENERAL,
                 7, 0,127,
